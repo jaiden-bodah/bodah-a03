@@ -9,6 +9,8 @@ package baseline;
 Write a program that prompts the user for five numbers and computes the total of the numbers.
  */
 
+import java.util.Scanner;
+
 public class Solution28 {
 
     /*
@@ -16,7 +18,27 @@ public class Solution28 {
     prompt the user to input 5 numbers
     create a loop for gathering the numbers
     take the 5 numbers the user inputted and calculate the total
-    use that total to find the average of the numbers
-    output average
+    output total
      */
+
+    public static void main(String[] args)
+
+    {
+        int i,n=0,s=0;
+        {
+
+            System.out.println("Input the 5 numbers : ");
+
+        }
+        for (i=0;i<5;i++)
+        {
+            Scanner in = new Scanner(System.in);
+            n = in.nextInt();
+
+            s +=n;
+        }
+
+        System.out.println("The total is : " +s);
+
+    }
 }
