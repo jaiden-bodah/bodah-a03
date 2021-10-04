@@ -10,6 +10,8 @@ Write a quick calculator that prompts for the rate of return on an investment an
 calculates how many years it will take to double your investment.
  */
 
+import java.util.Scanner;
+
 public class Solution29 {
 
     /*
@@ -20,4 +22,28 @@ public class Solution29 {
     if allowed to calculate the amount of years it will take to double
     print out calculations
      */
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        boolean flag = false;
+        while (true) {
+            try {
+                System.out.print("What is the rate of return? ");
+                int r = Integer.parseInt(sc.next());
+                System.out.println("It will take " + (72 / r) + " years to double your initial investment.");
+                flag = true;
+            } catch (NumberFormatException e)
+            {
+                System.out.println("Sorry. That's not a valid input");
+            } catch (ArithmeticException e)
+            {
+                System.out.println("Sorry. That's not a valid input");
+            }
+            if (flag)
+            {
+                break;
+            }
+
+        }
+    }
 }
