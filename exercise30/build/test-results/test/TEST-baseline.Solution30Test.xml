@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.Solution30Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-04T00:21:41" hostname="LAPTOP-AN2V3G5P" time="0.012">
+  <properties/>
+  <testcase name="printMultiplicationTable()" classname="baseline.Solution30Test" time="0.012"/>
+  <system-out><![CDATA[   1 |  12 | 123 |1234 |]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
