@@ -10,6 +10,9 @@ Create a Magic 8 Ball game that prompts for a question and then displays either
 "Yes," "No," "Maybe," or "Ask again later."
  */
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Solution33 {
 
     /*
@@ -20,5 +23,25 @@ public class Solution33 {
     print response
      */
 
+    public static void main(String[] args) {
 
+        String[] responses = {"Yes","No","Maybe","Ask again later"};
+
+        Random random = new Random();
+
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What's your question?");
+        String question = sc.nextLine();
+
+
+        int randomResponseIndex = random.nextInt(responses.length);
+
+        String response = responses[randomResponseIndex];
+
+        System.out.println();
+        System.out.println(response);
+        System.out.println();
+    }
 }
